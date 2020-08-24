@@ -1,0 +1,1 @@
+<view class="content box">Hello！<image mode="aspectFit" src="{{src}}"></image><button data-event-opts="{{[['tap',[['open',['$event']]]]]}}" bindtap="__e">点击调用云函数</button><button data-event-opts="{{[['tap',[['upload',['$event']]]]]}}" bindtap="__e">选择图片进行云存储</button><button data-event-opts="{{[['tap',[['deleteFile',['$event']]]]]}}" bindtap="__e">删除云存储的图片</button></view>
