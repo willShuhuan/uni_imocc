@@ -41,7 +41,7 @@
 					uni.hideLoading();
 					console.log(res);
 					uni.showToast({
-						title:this.like?"取消收藏":"收藏成功",
+						title:this.like?"收藏成功":"取消收藏",
 						icon:'none'
 					})
 				}).catch(()=>{

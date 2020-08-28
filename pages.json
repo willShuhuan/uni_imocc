@@ -39,7 +39,13 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		}
-	],
+        ,{
+            "path" : "pages/home-search/home-search",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

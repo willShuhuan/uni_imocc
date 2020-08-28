@@ -136,15 +136,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
+  props: {
+    value: {
+      type: [String, Number],
+      default: '' },
+
+    isSearch: {
+      type: Boolean,
+      default: false } },
+
+
   data: function data() {
     return {
       statusBarHeight: 20,
       navBarHeight: 45,
-      windowWidth: 375 };
+      windowWidth: 375,
+      val: '' };
 
   },
+  watch: {
+    value: function value(newVal) {
+      console.log('newVal', newVal);
+      this.value = newVal;
+    } },
+
   created: function created() {
     //获取系统信息
     var info = uni.getSystemInfoSync();
@@ -162,7 +187,28 @@ var _default =
     console.log(this.navBarHeight);
     this.windowWidth = menuButtonInfo.left;
 
-  } };exports.default = _default;
+  },
+  methods: {
+    open: function open() {
+      uni.navigateTo({
+        url: "/pages/home-search/home-search" });
+
+    },
+    inputChange: function inputChange(e) {
+      console.log(e);var
+
+      value =
+      e.detail.value;
+      console.log(value);
+      this.$emit('input', value);
+    },
+    back: function back() {
+      //navBack在刷新页面时无法返回 因为页面栈只有一个元素
+      // uni.navigateBack();
+      uni.switchTab({
+        url: "../../pages/tabbar/index/index" });
+
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

@@ -161,7 +161,7 @@ var _default2 =
         uni.hideLoading();
         console.log(res);
         uni.showToast({
-          title: _this.like ? "取消收藏" : "收藏成功",
+          title: _this.like ? "收藏成功" : "取消收藏",
           icon: 'none' });
 
       }).catch(function () {

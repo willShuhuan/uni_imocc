@@ -80,6 +80,7 @@
 		},
 		methods:{
 			open(){
+				this.$emit('click',this.item)
 				console.log('opennews');
 			}
 		}

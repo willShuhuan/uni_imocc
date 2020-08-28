@@ -106,6 +106,7 @@ var _default2 =
   },
   methods: {
     open: function open() {
+      this.$emit('click', this.item);
       console.log('opennews');
     } } };exports.default = _default2;
 

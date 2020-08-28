@@ -5,7 +5,8 @@
     "pages/tabbar/my/my",
     "pages/tabbar/demo/demo",
     "pages/tabbar/demo/uniclouddemo",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/home-search/home-search"
   ],
   "subPackages": [],
   "window": {
