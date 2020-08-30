@@ -27,3 +27,10 @@
 		data
 	})
 }
+//更新栏目
+export const update_label = (data) => {
+	return $http({
+		url: 'update_label',
+		data
+	})
+}

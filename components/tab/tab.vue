@@ -7,7 +7,7 @@
 				@click="clickTab(item,index)">{{item.name}}</view>
 			</view>
 		</scroll-view>
-		<view class="tab-icons">
+		<view class="tab-icons" @click="open">
 			<uni-icons type="gear" size="26" color="#666"></uni-icons>
 		</view>
 	</view>
@@ -32,6 +32,11 @@
 						data:item,
 						index:index
 					});
+			},
+			open(){
+				uni.navigateTo({
+					url:"/pages/home-label/home-label"
+				})
 			}
 		},
 		//可以监听data props 中值的变化

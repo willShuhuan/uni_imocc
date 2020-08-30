@@ -172,9 +172,7 @@ var _default =
       this.activeIndex = index;
     },
     getLable: function getLable() {var _this = this;
-      this.$api.get_label({
-        name: 'get_label' }).
-      then(function (res) {
+      this.$api.get_label().then(function (res) {
         console.log(res);var
         data = res.data;
         data.unshift({

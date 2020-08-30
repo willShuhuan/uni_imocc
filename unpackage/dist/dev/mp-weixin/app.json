@@ -6,7 +6,8 @@
     "pages/tabbar/demo/demo",
     "pages/tabbar/demo/uniclouddemo",
     "pages/index/index",
-    "pages/home-search/home-search"
+    "pages/home-search/home-search",
+    "pages/home-label/home-label"
   ],
   "subPackages": [],
   "window": {

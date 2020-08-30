@@ -25,9 +25,7 @@
 				this.activeIndex = index;
 			},
 			getLable(){
-				this.$api.get_label({
-					name:'get_label'
-				}).then(res=>{
+				this.$api.get_label().then(res=>{
 					console.log(res);
 					const {data} = res;
 					data.unshift({
@@ -44,6 +42,12 @@
 			
 		},
 		onLoad() {
+			uni.$on('labelChange',(res)=>{
+				this.tableList = [];
+				this.tabIndex = 0;
+				this.activeIndex = 0;
+				this.getLable()
+			}),
 			this.getLable()
 		}
 	}
