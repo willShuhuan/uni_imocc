@@ -34,3 +34,24 @@ export const update_label = (data) => {
 		data
 	})
 }
+//获取文章详情
+export const get_detail = (data) =>{
+	return $http({
+		url:'get_detail',
+		data
+	})
+}
+//发布/更新评论
+export const update_comment = (data) =>{
+	return $http({
+		url:'update_comment',
+		data
+	})
+}
+//获取文章评论
+export const get_comments = (data) =>{
+	return $http({
+		url:'get_comments',
+		data
+	})
+}

@@ -14,4 +14,5 @@
 
 <style>
 	/*每个页面公共css */
+	@import 'components/gaoyia-parse/parse.css';
 </style>

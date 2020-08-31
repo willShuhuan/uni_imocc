@@ -80,8 +80,22 @@
 		},
 		methods:{
 			open(){
-				this.$emit('click',this.item)
-				console.log('opennews');
+				const item = this.item;
+				this.$emit('click',item)
+				console.log('opennews',item);
+				const params = {
+					_id:item._id,
+					title:item.title,
+					create_time:item.create_time,
+					thumbs_up_count:item.thumbs_up_count,
+					browse_count:item.thumbs_up_count,
+					author:item.author
+				}
+				console.log('opennews',params);
+				//传参要注意长度 否则可能参数被截断
+				uni.navigateTo({
+					url:"/pages/home-detail/home-detail?params="+JSON.stringify(params)
+				})
 			}
 		}
 	}
