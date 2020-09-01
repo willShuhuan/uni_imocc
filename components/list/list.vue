@@ -90,6 +90,11 @@
 		}
 		,
 		created() {
+			uni.$on('update_article',()=>{
+				this.listCatchData = {};
+				this.load = {};
+				this.getList(this.activeIndex);
+			})
 		}
 	}
 </script>

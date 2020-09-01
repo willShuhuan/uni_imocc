@@ -14,7 +14,7 @@
 					{{comments.to}}
 				</view>
 				<view class="time">
-					{{comments.create_time}}
+					{{comments.create_time | formatTime}}
 				</view>
 			</view>
 		</view>
@@ -36,6 +36,7 @@
 
 <script>
 	import commentsBox from "@/components/comments-box/comments-box.vue"
+	import {parseTime} from "@/utils/index.js"
 	export default {
 		name:"comments-box",//调用递归组件要声明name
 		components:{
@@ -51,6 +52,11 @@
 			reply:{
 				type:Boolean,
 				default:false
+			}
+		},
+		filters:{
+			formatTime(time){
+				return parseTime(time);
 			}
 		},
 		methods:{
