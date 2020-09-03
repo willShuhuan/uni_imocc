@@ -69,3 +69,17 @@ export const update_thumbsup = (data) =>{
 		data
 	})
 }
+//获取关注文章数据
+export const get_follow = (data) =>{
+	return $http({
+		url:'get_follow',
+		data
+	})
+}
+//获取关注作者数据
+export const get_author = (data) =>{
+	return $http({
+		url:'get_author',
+		data
+	})
+}
