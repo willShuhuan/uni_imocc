@@ -83,3 +83,24 @@ export const get_author = (data) =>{
 		data
 	})
 }
+//获取用户信息
+export const get_user = (data) =>{
+	return $http({
+		url:'get_user',
+		data
+	})
+}
+//获取我的文章
+export const get_my_articles = (data) =>{
+	return $http({
+		url:'get_my_articles',
+		data
+	})
+}
+//提交意见反馈
+export const update_feedback = (data) =>{
+	return $http({
+		url:'update_feedback',
+		data
+	})
+}

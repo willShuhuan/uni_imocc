@@ -12,13 +12,13 @@
 		{
 			"path": "pages/tabbar/follow/follow",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "关注"
 			}
 		},
 		{
 			"path": "pages/tabbar/my/my",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "个人中心"
 			}
 		},
 		{
@@ -30,7 +30,7 @@
 		{
 			"path": "pages/tabbar/demo/uniclouddemo",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "uni案例"
 			}
 		},
 		{
@@ -57,7 +57,21 @@
         }
         ,{
             "path" : "pages/detail-comments/detail-comments",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText":"评论列比饿哦"
+			}
+        }
+        ,{
+            "path" : "pages/my-article/my-article",
+            "style" : {
+				"navigationBarTitleText":"我的文章"
+			}
+        }
+        ,{
+            "path" : "pages/feedback/feedback",
+            "style" : {
+				"navigationBarTitleText":"意见反馈"
+			}
         }
     ],
 	"globalStyle": {
@@ -87,8 +101,8 @@
 			"text": "我的"
 		},{
 			"pagePath": "pages/tabbar/demo/demo",
-			"iconPath": "static/my.png",
-			"selectedIconPath": "static/my-active.png",
+			"iconPath": "static/xiong.png",
+			"selectedIconPath": "static/xionglight.png",
 			"text": "vue案例"
 		}]
 	}
