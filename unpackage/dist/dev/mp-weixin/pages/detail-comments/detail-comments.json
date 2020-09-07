@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "评论列比饿哦",
+  "usingComponents": {
+    "comments-box": "/components/comments-box/comments-box",
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

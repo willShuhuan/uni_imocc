@@ -39,13 +39,13 @@
 				<uni-icons type="compose" size="16" color="#f07373"></uni-icons>
 			</view>
 			<view class="detail-bottom_icons">
-				<view class="detail-bottom_icons—box" @click="openComments">
+				<view class="detail-bottom_icons_box" @click="openComments">
 					<uni-icons type="chat" size="22" color="#f07373"></uni-icons>
 				</view>
-				<view class="detail-bottom_icons—box" @click="likeTap">
+				<view class="detail-bottom_icons_box" @click="likeTap">
 					<uni-icons :type="formData.is_like?'heart-filled':'heart'" size="22" color="#f07373"></uni-icons>
 				</view>
-				<view class="detail-bottom_icons—box" @click="thumbsup">
+				<view class="detail-bottom_icons_box" @click="thumbsup">
 					<uni-icons :type="formData.is_thumbs_up?'hand-thumbsup-filled':'hand-thumbsup'" size="22" color="#f07373"></uni-icons>
 				</view>
 			</view>
@@ -325,7 +325,7 @@
 				display: flex;
 				flex-shrink: 0;
 				padding: 0 10px;
-				.detail-bottom_icons—box{
+				.detail-bottom_icons_box{
 					position: relative;
 					display: flex;
 					align-items: center;

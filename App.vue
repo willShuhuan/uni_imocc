@@ -2,6 +2,7 @@
 	export default {
 		onLaunch: function() {
 			console.log('App Launch')
+			//请求接口 异步
 			this.$api.get_user({
 				user_id:'5f3d11c03d11c60001141e5f'
 			}).then(res=>{

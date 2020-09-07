@@ -7,13 +7,17 @@
     "pages/tabbar/demo/uniclouddemo",
     "pages/index/index",
     "pages/home-search/home-search",
-    "pages/home-label/home-label"
+    "pages/home-label/home-label",
+    "pages/home-detail/home-detail",
+    "pages/detail-comments/detail-comments",
+    "pages/my-article/my-article",
+    "pages/feedback/feedback"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#F07373",
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
@@ -41,8 +45,8 @@
       },
       {
         "pagePath": "pages/tabbar/demo/demo",
-        "iconPath": "static/my.png",
-        "selectedIconPath": "static/my-active.png",
+        "iconPath": "static/xiong.png",
+        "selectedIconPath": "static/xionglight.png",
         "text": "vue案例"
       }
     ]

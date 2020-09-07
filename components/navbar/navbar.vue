@@ -1,7 +1,12 @@
 <template>
 	<view class="navbar">
 		<view class="navbar-fixed">
+			<!-- 状态栏 -->
+			<!-- 阿里小程序适配不显示状态栏 -->
+			<!-- #ifndef MP-ALIPAY -->
 			<view :style="{height: statusBarHeight+'px'}"></view>
+			<!-- #endif -->
+			<!-- 导航栏 -->
 			<view class="navbar-content" :class="{search:isSearch}" :style="{height:navBarHeight+'px',width:windowWidth+'px'}">
 				<view class="navbar-content_search_icons" v-if="isSearch" @click="back">
 					<uni-icons type="back" size="22" color="#fff"></uni-icons>
@@ -66,6 +71,9 @@
 			this.navBarHeight = menuButtonInfo.bottom-info.statusBarHeight+menuButtonInfo.top-info.statusBarHeight;
 			console.log(this.navBarHeight);
 			this.windowWidth = menuButtonInfo.left;
+			// #endif
+			// #ifdef MP-ALIPAY
+			this.statusBarHeight = 0	
 			// #endif
 		},
 		methods:{

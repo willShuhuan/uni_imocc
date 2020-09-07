@@ -28,12 +28,6 @@ const store = new Vuex.Store({
 		},
 		set_history({commit,state},history){
 			let list = state.historyList;
-			// console.log('set_history',list);
-			// console.log('set_history',history);
-			// if(list.indexOf({history})!==-1){
-			// 	console.log("已存在，不存储");
-			// 	return;
-			// }
 			if(isHistoryExists(state,history)){
 				console.log("已存在，不存储");
 				return;
